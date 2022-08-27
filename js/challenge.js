@@ -38,19 +38,27 @@ function Counting() {
   counter.innerText = parseInt(counter.innerText) + 1;
 }
 
+// timer function
+
 function increment() {
   clearTimeout(countIndex);
   counter.innerText = parseInt(counter.innerText) + 1;
 }
 let countIndex = setInterval(Counting, 1 * 1000);
 
+//minus to the counter
+
 minus.addEventListener("click", function () {
   counter.innerText = parseInt(counter.innerText) - 1;
 });
 
+//plus to the counter
+
 plus.addEventListener("click", function () {
   counter.innerText = parseInt(counter.innerText) + 1;
 });
+
+// adding Pause event listener
 
 pause.addEventListener("click", function () {
   if (pause.innerText === "pause") {
